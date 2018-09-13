@@ -8,3 +8,7 @@ bind index,pager ,k sidebar-prev
 bind index,pager ,j sidebar-next
 bind index,pager ,, sidebar-open
 bind index,pager ,q sidebar-toggle-visible
+
+# For using urlscan to scan URLs in a message.
+macro index,pager \Cl "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
+macro attach,compose \Cl "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
