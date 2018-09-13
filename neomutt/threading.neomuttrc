@@ -1,0 +1,5 @@
+# vim: filetype=muttrc
+
+set strict_threads = "yes"
+unset collapse_unread
+

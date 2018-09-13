@@ -1,0 +1,5 @@
+# vim: filetype=muttrc
+
+set sort = "reverse-threads"
+set sort_aux = "last-date-received"
+

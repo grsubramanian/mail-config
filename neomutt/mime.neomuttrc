@@ -1,0 +1,5 @@
+# vim: filetype=muttrc
+
+auto_view text/html application/text application/pdf
+alternative_order text/enriched text/html text/plain text
+

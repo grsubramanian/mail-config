@@ -1,0 +1,10 @@
+# vim: filetype=muttrc
+
+# Due to MacOSX issues with Ctrl + o, I had to choose
+# a different leader key. I chose comma as that is
+# unused elsewhere. Also, j and k seem more vim-like
+# than p and n for previous and next.
+bind index,pager ,k sidebar-prev
+bind index,pager ,j sidebar-next
+bind index,pager ,, sidebar-open
+bind index,pager ,q sidebar-toggle-visible

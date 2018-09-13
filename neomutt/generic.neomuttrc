@@ -1,0 +1,7 @@
+# vim: filetype=muttrc
+
+set realname = "Gokul Ramanan Subramanian"
+set use_from = yes
+set editor = "vim"
+set mail_check_stats
+
