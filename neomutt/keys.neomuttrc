@@ -10,5 +10,25 @@ bind index,pager ,, sidebar-open
 bind index,pager ,q sidebar-toggle-visible
 
 # For using urlscan to scan URLs in a message.
-macro index,pager \Cl "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
-macro attach,compose \Cl "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
+macro index,pager \Cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
+macro attach,compose \Cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
+
+# Tagging email as archived.
+macro index a "<modify-labels>+archive -inbox \\n"
+macro index A "<modify-labels>+archive -inbox \\n"
+macro index <Esc>a "<modify-labels>+archive -inbox \\n"
+macro index <Esc>A "<modify-labels>+archive -inbox \\n"
+macro index \Ca "<modify-labels>+archive -inbox \\n"
+
+# Tagging email as deleted or undoing that.
+macro index d "<modify-labels>+deleted -inbox \\n"
+macro index D "<modify-labels>+deleted -inbox \\n"
+macro index <Esc>d "<modify-labels>+deleted -inbox \\n"
+macro index <Esc>D "<modify-labels>+deleted -inbox \\n"
+macro index \Cd "<modify-labels>+deleted -inbox \\n"
+macro index u "<modify-labels>-deleted +inbox \\n"
+macro index U "<modify-labels>-deleted +inbox \\n"
+macro index <Esc>u "<modify-labels>-deleted +inbox \\n"
+macro index <Esc>U "<modify-labels>-deleted +inbox \\n"
+macro index \Cu "<modify-labels>-deleted +inbox \\n"
+

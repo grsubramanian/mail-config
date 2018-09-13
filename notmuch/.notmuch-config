@@ -11,7 +11,7 @@
 # configured here named ".notmuch".
 #
 [database]
-path=/Users/gokusubr/.mail
+path=/myhome/.mail
 
 # User configuration
 #
@@ -48,7 +48,7 @@ other_email=gokusubr@amazon.co.uk;gokul2411s@gmail.com;
 #		in the mail store.
 #
 [new]
-tags=unread;inbox;
+tags=new;
 ignore=
 
 # Search configuration

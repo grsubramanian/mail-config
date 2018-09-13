@@ -1,0 +1,9 @@
+# vim: filetype=muttrc
+
+# myhome is assumed to be a symlink to home. This convention
+# helps with avoiding system specific home paths.
+set nm_default_uri = "notmuch:///myhome/.mail"
+set virtual_spoolfile = yes
+
+set folder = "$HOME/.mail"
+

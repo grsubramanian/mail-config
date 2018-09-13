@@ -1,7 +1,7 @@
 # vim: filetype=muttrc
 
 set sidebar_visible
-set sidebar_width = 25
+set sidebar_width = 30
 set sidebar_divider_char = '│'
 set sidebar_folder_indent
 set sidebar_indent_string = "  "
