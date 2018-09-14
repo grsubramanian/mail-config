@@ -13,6 +13,9 @@ bind index,pager ,q sidebar-toggle-visible
 macro index,pager \Cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
 macro attach,compose \Cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
 
+# Custom label modification.
+bind index Y modify-labels 
+
 # Tagging email as archived.
 macro index a "<modify-labels>+archive -inbox \\n"
 macro index A "<modify-labels>+archive -inbox \\n"
