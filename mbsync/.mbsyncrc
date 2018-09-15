@@ -1,0 +1,25 @@
+Create Both
+Expunge Both
+SyncState *
+
+IMAPAccount gmail
+Host imap.gmail.com
+User gokul2411s@gmail.com
+PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.password-store/Personal/Gmail.gpg"
+SSLType IMAPS
+AuthMechs LOGIN
+CertificateFile ~/.certs/imaps.gmail.com.pem
+
+IMAPStore gmail-remote
+Account gmail
+
+MaildirStore gmail-local
+Path ~/.mail/gmail/
+Inbox ~/.mail/gmail/INBOX
+SubFolders Verbatim
+
+Channel gmail
+Master :gmail-remote:
+Slave :gmail-local:
+Patterns INBOX "[Gmail]/Sent Items"
+

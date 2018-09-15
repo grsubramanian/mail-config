@@ -1,0 +1,6 @@
+# vim: filetype=muttrc
+
+source "$HOME/mail-config/common-mail-config/neomutt/generic.neomuttrc"
+
+source "$HOME/mail-config/common-mail-config/neomutt/gmail.neomuttrc"
+

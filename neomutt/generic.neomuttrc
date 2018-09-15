@@ -7,6 +7,14 @@ set editor = "vim"
 set mail_check_stats
 
 set use_from = yes
-set from = "gokusubr@amazon.com"
-set sendmail = "/usr/local/bin/msmtp"
+
+set mailcap_path = "$HOME/mail-config/common-mail-config/neomutt/.mailcap"
+
+source "$HOME/mail-config/common-mail-config/neomutt/notmuch.neomuttrc"
+source "$HOME/mail-config/common-mail-config/neomutt/format.neomuttrc"
+source "$HOME/mail-config/common-mail-config/neomutt/colors.neomuttrc"
+source "$HOME/mail-config/common-mail-config/neomutt/sorting.neomuttrc"
+source "$HOME/mail-config/common-mail-config/neomutt/threading.neomuttrc"
+source "$HOME/mail-config/common-mail-config/neomutt/sidebar.neomuttrc"
+source "$HOME/mail-config/common-mail-config/neomutt/keys.neomuttrc"
 

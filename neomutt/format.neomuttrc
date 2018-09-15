@@ -1,6 +1,6 @@
 # vim: filetype=muttrc
 
 set date_format = "%d/%b/%y %I:%M:%S%p %Z"
-set index_format = "%C %Z %D %L %s"
-set sidebar_format = "%B%?F? [%F]?%* %N/%S"
+set index_format = "%2C %Z %D %L %s"
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
 
