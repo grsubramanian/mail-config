@@ -14,7 +14,6 @@ bind index c change-vfolder
 macro index,pager \Cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
 macro attach,compose \Cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
 
-
 # Custom label modification.
 bind index Y modify-labels 
 
@@ -37,3 +36,14 @@ macro index <Esc>u "<modify-labels>-deleted +inbox \\n"
 macro index <Esc>U "<modify-labels>-deleted +inbox \\n"
 macro index \Cu "<modify-labels>-deleted +inbox \\n"
 
+# Open attachment with the default application.
+# On systems that don't support the open command, we expect
+# there to be an alias or function called open that points to
+# the respective command.
+macro attach o \
+"\
+<enter-command>unset wait_key<enter>\
+<shell-escape>rm -f /tmp/mutt-attach<enter>\
+<save-entry><kill-line>/tmp/mutt-attach<enter>\
+<shell-escape>open /tmp/mutt-attach &<enter>\
+"
