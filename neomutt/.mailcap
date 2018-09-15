@@ -1,6 +1,7 @@
 # HTML (when you press Enter in the attachment list)
-# text/html; lynx -assume_charset=%{charset} -display_charset=utf-8 -dump %s; nametemplate=%s.html; copiousoutput
+text/html; lynx -assume_charset=%{charset} -display_charset=utf-8 %s; nametemplate=%s.html;
 # maybe also consider -html-hard-assume 1
 
 # HTML mail (rendered in Mutt's pager and also what you get when replying)
 text/html; w3m -dump -s -o display_link=yes -o display_link_number=yes -o decode_url=yes -T text/html -I %{charset}; copiousoutput; description=HTML Text
+
