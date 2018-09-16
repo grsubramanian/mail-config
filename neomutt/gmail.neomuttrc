@@ -5,5 +5,6 @@ set sendmail = "msmtp -C $HOME/mail-config/common-mail-config/msmtp/.msmtprc"
 
 virtual-mailboxes "inbox" "notmuch://?query=tag:gmail and tag:inbox"
 virtual-mailboxes "sent" "notmuch://?query=tag:gmail and tag:sent"
+virtual-mailboxes "archived" "notmuch://?query=tag:gmail and tag:archived"
 virtual-mailboxes "trash" "notmuch://?query=tag:gmail and tag:deleted"
 
