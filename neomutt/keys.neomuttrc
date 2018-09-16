@@ -18,11 +18,11 @@ macro attach,compose \Cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract 
 bind index Y modify-labels 
 
 # Tagging email as archived.
-macro index a "<modify-labels>+archive -inbox \\n"
-macro index A "<modify-labels>+archive -inbox \\n"
-macro index <Esc>a "<modify-labels>+archive -inbox \\n"
-macro index <Esc>A "<modify-labels>+archive -inbox \\n"
-macro index \Ca "<modify-labels>+archive -inbox \\n"
+macro index a "<modify-labels>+archive -inbox -sent \\n"
+macro index A "<modify-labels>+archive -inbox -sent \\n"
+macro index <Esc>a "<modify-labels>+archive -inbox -sent \\n"
+macro index <Esc>A "<modify-labels>+archive -inbox -sent \\n"
+macro index \Ca "<modify-labels>+archive -inbox -sent \\n"
 
 # Tagging email as deleted or undoing that. Undo will always put the message
 # back into inbox. However, the next run of notmuch new should restore the
