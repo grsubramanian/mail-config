@@ -9,4 +9,4 @@ set sidebar_short_path
 set sidebar_delim_chars = "/"
 
 set sidebar_new_mail_only
-sidebar_whitelist inbox sent trash archive
+sidebar_whitelist inbox sent trash archived
