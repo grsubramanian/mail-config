@@ -4,5 +4,5 @@ notmuch tag -new +inbox +unread -- tag:new
 
 notmuch tag +gmail -- path:"gmail/**"
 
-notmuch tag +sent -inbox -unread -- '(from:"Gokul Ramanan Subramanian <gokul2411s@gmail.com>" or from:"Gokul Subramanian <gokul2411s@gmail.com>" or from:"Gokul <gokul2411s@gmail.com>" or from:"gokul2411s@gmail.com") and tag:gmail'
+notmuch tag +sent -inbox -unread -- 'from:"/(Gokul)?.*gokul2411s@.*/" and tag:gmail'
 
