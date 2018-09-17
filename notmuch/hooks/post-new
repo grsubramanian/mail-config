@@ -1,8 +1,11 @@
 #!/bin/sh
 
-notmuch tag -new +inbox +unread -- tag:new
+notmuch_config="$HOME/mail-config/common-mail-config/notmuch/.notmuch-config"
+alias notmuchc='notmuch --config="$notmuch_config"'
 
-notmuch tag +gmail -- path:"gmail/**"
+notmuchc tag -new +inbox +unread -- tag:new
 
-notmuch tag +sent -inbox -unread -- 'from:"/(Gokul)?.*gokul2411s@.*/" and tag:gmail'
+notmuchc tag +gmail -- 'not tag:gmail'
+
+notmuchc tag +sent -inbox -unread -- 'from:gokul2411s and tag:gmail'
 

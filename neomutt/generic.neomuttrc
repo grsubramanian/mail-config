@@ -10,7 +10,8 @@ set use_from = yes
 
 set mailcap_path = "$HOME/mail-config/common-mail-config/neomutt/.mailcap"
 
-source "$HOME/mail-config/common-mail-config/neomutt/notmuch.neomuttrc"
+set virtual_spoolfile = yes
+
 source "$HOME/mail-config/common-mail-config/neomutt/format.neomuttrc"
 source "$HOME/mail-config/common-mail-config/neomutt/colors.neomuttrc"
 source "$HOME/mail-config/common-mail-config/neomutt/sorting.neomuttrc"

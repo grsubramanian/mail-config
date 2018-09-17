@@ -3,6 +3,10 @@
 set from = "gokul2411s@gmail.com"
 set sendmail = "msmtp -C $HOME/mail-config/common-mail-config/msmtp/.msmtprc"
 
+# myhome is assumed to be a symlink to home. This convention
+# helps with avoiding system specific home paths.
+set nm_default_uri = "notmuch:///myhome/.mail/gmail"
+set folder = "$HOME/.mail/gmail"
 virtual-mailboxes "inbox" "notmuch://?query=tag:gmail and tag:inbox"
 virtual-mailboxes "sent" "notmuch://?query=tag:gmail and tag:sent"
 virtual-mailboxes "archived" "notmuch://?query=tag:gmail and tag:archived"
