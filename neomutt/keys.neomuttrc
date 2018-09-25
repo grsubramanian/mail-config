@@ -49,3 +49,7 @@ macro attach o \
 <save-entry><kill-line>/tmp/mutt-attach<enter>\
 <shell-escape>open /tmp/mutt-attach &<enter>\
 "
+
+# For running address queries while typing in addresses.
+bind editor <Tab> complete-query
+bind editor ^T complete
