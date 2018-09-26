@@ -18,4 +18,5 @@ source "$HOME/mail-config/common-mail-config/neomutt/sorting.neomuttrc"
 source "$HOME/mail-config/common-mail-config/neomutt/threading.neomuttrc"
 source "$HOME/mail-config/common-mail-config/neomutt/sidebar.neomuttrc"
 source "$HOME/mail-config/common-mail-config/neomutt/keys.neomuttrc"
+source "$HOME/mail-config/common-mail-config/neomutt/mime.neomuttrc"
 
