@@ -5,3 +5,5 @@ text/html; lynx -assume_charset=%{charset} -display_charset=utf-8 %s; nametempla
 # HTML mail (rendered in Mutt's pager and also what you get when replying)
 text/html; w3m -dump -s -o display_link=yes -o display_link_number=yes -o decode_url=yes -T text/html -I %{charset}; copiousoutput; description=HTML Text
 
+# From https://github.com/terabyte/mutt-filters.
+text/calendar; $HOME/mail-config/common-mail-config/neomutt/vcalendar-filter; copiousoutput;
