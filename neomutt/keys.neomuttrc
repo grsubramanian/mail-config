@@ -10,6 +10,10 @@ bind index,pager ,, sidebar-open
 bind index,pager ,q sidebar-toggle-visible
 bind index c change-vfolder
 
+# Simpler navigation in pager
+bind pager <Up> previous-line
+bind pager <Down> next-line
+
 # For using urlscan to scan URLs in a message.
 macro index,pager \Cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
 macro attach,compose \Cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
