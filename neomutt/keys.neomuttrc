@@ -31,11 +31,11 @@ macro index \Ca "<modify-labels>+archived -inbox -sent \\n"
 # Tagging email as deleted or undoing that. Undo will always put the message
 # back into inbox. However, the next run of notmuch new should restore the
 # correct labels for this message.
-macro index d "<modify-labels>+deleted -inbox -sent -archive \\n"
-macro index D "<modify-labels>+deleted -inbox -sent -archive \\n"
-macro index <Esc>d "<modify-labels>+deleted -inbox -sent -archive \\n"
-macro index <Esc>D "<modify-labels>+deleted -inbox -sent -archive \\n"
-macro index \Cd "<modify-labels>+deleted -inbox -sent -archive \\n"
+macro index d "<modify-labels>+deleted -inbox -sent -archived \\n"
+macro index D "<modify-labels>+deleted -inbox -sent -archived \\n"
+macro index <Esc>d "<modify-labels>+deleted -inbox -sent -archived \\n"
+macro index <Esc>D "<modify-labels>+deleted -inbox -sent -archived \\n"
+macro index \Cd "<modify-labels>+deleted -inbox -sent -archived \\n"
 macro index u "<modify-labels>-deleted +inbox \\n"
 macro index U "<modify-labels>-deleted +inbox \\n"
 macro index <Esc>u "<modify-labels>-deleted +inbox \\n"
