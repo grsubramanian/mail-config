@@ -1,7 +1,7 @@
 # vim: filetype=muttrc
 
 set sidebar_visible
-set sidebar_width = 30
+set sidebar_width = 40
 set sidebar_divider_char = '│'
 
 set sidebar_new_mail_only = "no"
