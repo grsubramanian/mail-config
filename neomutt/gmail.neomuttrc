@@ -7,8 +7,12 @@ set sendmail = "msmtp -C $HOME/mail-config/common-mail-config/msmtp/.msmtprc"
 # helps with avoiding system specific home paths.
 set nm_default_uri = "notmuch:///myhome/.mail/gmail"
 set folder = "$HOME/.mail/gmail"
+virtual-mailboxes "kafka/dev" "notmuch://?query=tag:gmail and tag:kafka and tag:dev"
+virtual-mailboxes "kafka/users" "notmuch://?query=tag:gmail and tag:kafka and tag:users"
 virtual-mailboxes "inbox" "notmuch://?query=tag:gmail and tag:inbox"
 virtual-mailboxes "sent" "notmuch://?query=tag:gmail and tag:sent"
 virtual-mailboxes "archived" "notmuch://?query=tag:gmail and tag:archived"
 virtual-mailboxes "trash" "notmuch://?query=tag:gmail and tag:deleted"
 
+# gmail specific customizations.
+set sidebar_width = 30

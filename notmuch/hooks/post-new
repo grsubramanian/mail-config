@@ -9,3 +9,7 @@ notmuchc tag +gmail -- 'not tag:gmail'
 
 notmuchc tag +sent -inbox -unread -- 'from:gokul2411s and tag:gmail'
 
+# Kafka mailing lists.
+notmuchc tag +kafka +dev -inbox -- 'tag:inbox and to:/^.*dev@kafka.apache.org.*$/'
+notmuchc tag +kafka +users -inbox -- 'tag:inbox and to:/^.*users@kafka.apache.org.*$/'
+
